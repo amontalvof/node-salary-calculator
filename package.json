@@ -1,0 +1,19 @@
+{
+    "name": "salary-calculator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "Andy Montalvo",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.37.0"
+    },
+    "dependencies": {
+        "inquirer": "^8.2.5"
+    }
+}
