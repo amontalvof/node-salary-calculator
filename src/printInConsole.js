@@ -20,6 +20,7 @@ const printInConsole = ({
         'Total Monthly Received ->',
         formatToCurrency((anualSalary - taxesValue) / 12)
     );
+    console.log('\n');
 };
 
 module.exports = printInConsole;
