@@ -13,7 +13,11 @@ const questions = [
             },
             {
                 value: '2',
-                name: `${'2.'.green} Exit`,
+                name: `${'2.'.green} Enter your amount of hours in a week`,
+            },
+            {
+                value: '3',
+                name: `${'3.'.green} Exit`,
             },
         ],
     },

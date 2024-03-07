@@ -3,17 +3,24 @@ const { inquirerMenu, readInput } = require('./src/menu');
 
 const main = async () => {
     let opt = '';
-
+    let hourlyRate = 0;
+    let hoursOfWork = 0;
     do {
         opt = await inquirerMenu();
         switch (opt) {
             case '1':
-                calculateAnualSalary(await readInput('Rate:'));
+                hourlyRate = await readInput('Rate:');
+                break;
+            case '2':
+                hoursOfWork = await readInput('Hours:');
                 break;
             default:
                 break;
         }
-    } while (opt !== '2');
+        if (hourlyRate && hoursOfWork) {
+            calculateAnualSalary(hourlyRate, hoursOfWork);
+        }
+    } while (opt !== '3');
 };
 
 main();

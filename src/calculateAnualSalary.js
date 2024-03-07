@@ -1,7 +1,7 @@
 const printInConsole = require('./printInConsole');
 
-const calculateAnualSalary = (hourlyRate) => {
-    const hoursOfWorkPerWeek = 40;
+const calculateAnualSalary = (hourlyRate, hoursOfWorkPerWeek) => {
+    // const hoursOfWorkPerWeek = 40;
     const weeksOfWorkPerMonth = 4;
     const amountOfMonths = 12;
 
